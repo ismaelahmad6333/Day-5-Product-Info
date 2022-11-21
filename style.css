@@ -1,0 +1,75 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  color: #242e4c;
+  background-color: #ebf3fb;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+}
+
+.card {
+  width: 90%;
+  padding: 1.6rem;
+  background-color: #ffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  gap: 1rem;
+}
+
+.card img {
+  width: 50%;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.info .tags {
+  background-color: #242e4c;
+  color: #ffff;
+  padding: 0.5rem;
+  font-weight: 600;
+  font-size: 0.8rem;
+  border-radius: 1rem;
+  align-self: flex-start;
+}
+
+.info .price {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-top: 1rem;
+  color: #242e4c;
+}
+
+.info .description {
+  color: rgb(151, 148, 148);
+  font-weight: lighter;
+}
+
+.info .btn {
+  padding: 0.5rem;
+  border: none;
+  box-shadow: 0px 3px 0px #3b66b8;
+  background-color: #4787e9;
+  color: #ffff;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+@media only screen and (min-width: 750px) {
+  .card {
+    flex-direction: row;
+  }
+}
